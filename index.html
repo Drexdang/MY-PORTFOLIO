@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Elegant Portfolio</title>
+    <!-- Font Awesome link goes here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('profile')">Profile</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home" class="section active">
+            <h1>Welcome to My Elegant Portfolio</h1>
+            <p>Explore my journey, projects, and skills.</p>
+        </section>
+
+        <section id="profile" class="section">
+            <h1>Profile</h1>
+            <!-- Display Personal Picture -->
+            <img src="FB_IMG_17241523470971093.jpg" alt="My Picture" class="profile-picture">
+            <p>TOOLS: Python, Javascript, HTML, SPSS, Eviews, SQL, Power BI</p>
+            <ul>
+                <li>My name is Dang Pam Samuel. I am a Data Scientist, JavaScript Programmer, Website Developer, and Data Analyst with a strong foundation in finance and data analysis. I hold a Higher National Diploma (HND) in Accountancy and am a Certified Data Scientist. With experience working at Crispan Suites & Event Center, I specialize in optimizing business processes through data-driven insights. I am proficient in Python, SQL, Power BI, and other tools, enabling me to deliver impactful solutions across various projects and platforms.</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h1>Projects</h1>
+            <ul>
+                <li><a href="https://text2speech-convert.streamlit.app/" target="_blank">Text to Speech Web App</a></li>
+                <li><a href="https://independent.academia.edu/SAMUELDANG1" target="_blank">My publications on academia.edu</a></li>
+                <li><a href="https://dwhatsapp-chat-analyzer.streamlit.app/" target="_blank">WhatsApp Chat Analyzer Web App</a></li>
+                <li><a href="https://stock-price-dashboard.streamlit.app/" target="_blank">Global Stock Prediction Web App</a></li>
+            </ul>
+        </section>
+
+        <section id="about" class="section">
+            <h1>About Me</h1>
+            <p>I am passionate about accounting, data science, and sustainability studies, with a diverse research portfolio that spans across economy, health, and environmental accounting. I have also contributed to a variety of projects, including web app development and deployment. My work seeks to provide innovative solutions that merge technology with sustainability, aiming to foster a responsible approach to both financial and environmental challenges. Whether developing predictive models or conducting in-depth research, I focus on driving impactful changes across industries.</p>
+            
+            <!-- Resume Download Link -->
+            <p><a href="MY RESUME.pdf" download>Download My Resume</a></p>
+        </section>
+
+        <section id="contact" class="section">
+            <h1>Contact Me</h1>
+            <!-- Formspree Form Integration -->
+            <form action="https://formspree.io/f/mvgopkpw" method="POST">
+                <label for="email">Your email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Your message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+            <!-- Social Media Links Section -->
+            <div id="socialMediaLinks">
+                <h2>Connect with me</h2>
+                <a href="https://wa.me/+2348168950765" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp" style="font-size:30px; color: #25D366;"></i>
+                </a>
+                <a href="https://web.facebook.com/roland.dre.10" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook" style="font-size:30px; color: #3b5998;"></i>
+                </a>
+                <a href="https://x.com/Drexdang26?t=5DTXMfUwLRkyVeAua2OHRA&s=09" target="_blank" title="X">
+                    <i class="fab fa-x-twitter" style="font-size:30px; color: #1DA1F2;"></i>
+                </a>
+                <a href=" https://www.instagram.com/drexdang?igsh=YzljYTk1ODg3Zg==" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram" style="font-size:30px; color: #C13584;"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 My Elegant Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
