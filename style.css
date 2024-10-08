@@ -135,6 +135,25 @@ ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.project-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-around; /* Centers items with space between */
+}
+
+.project-item {
+    margin: 15px;
+    text-align: center;
+    flex: 1 1 200px; /* Flexible basis with a minimum size */
+    max-width: 250px; /* Limits maximum width */
+}
+
+.project-item img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -197,4 +216,82 @@ footer {
 
 footer p {
     font-size: 16px;
+}
+
+/* Social Media Links Section */
+#socialMediaLinks {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#socialMediaLinks a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+#socialMediaLinks a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#socialMediaLinks a:hover i {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+    color: #ff4081; /* Optional: change icon color on hover */
+}
+
+#socialMediaLinks a img.social-icon {
+    width: 40px; /* Adjust the size */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+}
+
+#socialMediaLinks a:hover img.social-icon {
+    transform: scale(1.2); /* Zoom effect */
+    filter: brightness(1.2); /* Slightly brighter on hover */
+}
+
+#socialMediaLinks {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center align */
+    align-items: center; /* Align items vertically */
+    margin-top: 30px; /* Adjust margin as needed */
+}
+
+#socialMediaLinks a img.social-icon {
+    height: 40px; /* Set a fixed height for consistency */
+    width: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+    vertical-align: middle; /* Align images vertically */
+}
+
+#socialMediaLinks a {
+    margin: 0 15px; /* Space between icons */
+}
+
+#contactMe {
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; /* Space below the contact section */
+}
+
+#contactMe h2 {
+    font-size: 24px; /* Adjust size as needed */
+    color: #222; /* You can customize the color */
+}
+
+#contactMe p {
+    font-size: 18px; /* Adjust size as needed */
+    color: #333; /* You can customize the color */
+}
+
+#connectWithMe {
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; /* Space below the connect section */
+}
+
+#connectWithMe h2 {
+    font-size: 24px; /* Adjust size as needed */
+    color: #222; /* You can customize the color */
+}
+
+#connectWithMe p {
+    font-size: 18px; /* Adjust size as needed */
+    color: #333; /* You can customize the color */
 }

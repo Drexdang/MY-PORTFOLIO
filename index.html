@@ -24,8 +24,34 @@
 
     <div class="container">
         <section id="home" class="section active">
-            <h1>Welcome to My Elegant Portfolio</h1>
-            <p>Explore my journey, projects, and skills.</p>
+            <div class="home-overlay"></div> <!-- Add an overlay for better text contrast -->
+            
+            <div class="home-content">
+                <h1 class="home-title">Welcome to My Elegant Portfolio</h1>
+                <p class="home-subtitle">Explore my journey, projects, and skills.</p>
+        
+                <!-- Animated Call to Action Buttons -->
+                <div class="home-buttons">
+                    <a href="#projects" class="cta-button">View My Projects</a>
+                    <a href="#about" class="cta-button cta-secondary">Learn More About Me</a>
+                </div>
+        
+                <!-- Skills/Highlights Section -->
+                <div class="home-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-laptop-code"></i> <!-- Icon representing coding skills -->
+                        <p>Web Application & Website Development</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-chart-line"></i> <!-- Icon for data analysis -->
+                        <p>Data Science & Data Analysis</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-money-bill-wave"></i> <!-- Icon for economics and finance -->
+                        <p>Economics & Financial Predictions</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="profile" class="section">
@@ -40,12 +66,32 @@
 
         <section id="projects" class="section">
             <h1>Projects</h1>
-            <ul>
-                <li><a href="https://text2speech-convert.streamlit.app/" target="_blank">Text to Speech Web App</a></li>
-                <li><a href="https://independent.academia.edu/SAMUELDANG1" target="_blank">My publications on academia.edu</a></li>
-                <li><a href="https://dwhatsapp-chat-analyzer.streamlit.app/" target="_blank">WhatsApp Chat Analyzer Web App</a></li>
-                <li><a href="https://stock-price-dashboard.streamlit.app/" target="_blank">Global Stock Prediction Web App</a></li>
-            </ul>
+            <div class="project-grid">
+                <div class="project-item">
+                    <a href="https://text2speech-convert.streamlit.app/" target="_blank">
+                        <img src="text-to-speech.png" alt="Text to Speech Web App">
+                        <p>Text to Speech Web App</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="https://independent.academia.edu/SAMUELDANG1" target="_blank">
+                        <img src="publications.jpg" alt="My Publications">
+                        <p>My Publications on Academia.edu</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="https://dwhatsapp-chat-analyzer.streamlit.app/" target="_blank">
+                        <img src="whatsapp.jpg" alt="WhatsApp Chat Analyzer Web App">
+                        <p>WhatsApp Chat Analyzer Web App</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="https://stock-price-dashboard.streamlit.app/" target="_blank">
+                        <img src="stock.jpg" alt="Global Stock Prediction Web App">
+                        <p>Global Stock Prediction Web App</p>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <section id="about" class="section">
@@ -67,20 +113,30 @@
                 <button type="submit">Send</button>
             </form>
 
-            <!-- Social Media Links Section -->
-            <div id="socialMediaLinks">
-                <h2>Connect with me</h2>
+            <div id="connectWithMe">
+                <h2>Connect with Me</h2>
+                <p>If you have any questions or just want to chat, feel free to reach out!</p>
+            </div>
+
+             <!-- Social Media Links Section -->
+             <div id="socialMediaLinks">
                 <a href="https://wa.me/+2348168950765" target="_blank" title="WhatsApp">
                     <i class="fab fa-whatsapp" style="font-size:30px; color: #25D366;"></i>
                 </a>
                 <a href="https://web.facebook.com/roland.dre.10" target="_blank" title="Facebook">
                     <i class="fab fa-facebook" style="font-size:30px; color: #3b5998;"></i>
                 </a>
-                <a href="https://x.com/Drexdang26?t=5DTXMfUwLRkyVeAua2OHRA&s=09" target="_blank" title="X">
-                    <i class="fab fa-x-twitter" style="font-size:30px; color: #1DA1F2;"></i>
+                <a href="https://x.com/Drexdang26?t=5DTXMfUwLRkyVeAua2OHRA&s=09" target="_blank">
+                        <img src="twitter.png" alt="X logo" style="font-size:24px" class="social-icon">
                 </a>
                 <a href=" https://www.instagram.com/drexdang?igsh=YzljYTk1ODg3Zg==" target="_blank" title="Instagram">
                     <i class="fab fa-instagram" style="font-size:30px; color: #C13584;"></i>
+                </a>
+                <a href="https://t.me/+2348168950765" target="_blank" title="Telegram">
+                    <i class="fab fa-telegram" style="font-size:30px; color: #0088cc;"></i>
+                </a>
+                <a href="https://github.com/Drexdang" target="_blank" title="GitHub">
+                    <i class="fab fa-github" style="font-size:30px; color: #333;"></i>
                 </a>
             </div>
         </section>
